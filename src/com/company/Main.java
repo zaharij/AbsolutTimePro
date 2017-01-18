@@ -11,6 +11,7 @@ public class Main {
         ZonedDateTime nowL = ZonedDateTime.now(ZoneOffset.systemDefault());
 
         TimeZone localTimezone = TimeZone.getDefault();
-        System.out.println("Diff.Local-UTC(" + localTimezone.getID() + "):" + localTimezone.getRawOffset()  + " \n " + "now UTC : " + nowU + " \n " + "now Local : " + nowL);
+        System.out.println("Diff.Local-UTC(" + localTimezone.getID() + "):" + localTimezone.getRawOffset()
+                + "\n" + "now UTC : " + nowU + "\n" + "now Local : " + nowL);
     }
 }
