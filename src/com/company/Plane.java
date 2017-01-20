@@ -7,8 +7,8 @@ public class Plane extends WarMashine{
 
     private int maxHeighth;
 
-    public Plane(String color, int speed, int weight, int maxHeighth) {
-        super(color, speed, weight);
+    public Plane(String color, int speed, int weight, int coordinateX, int coordinateY, int maxHeighth) {
+        super(color, speed, weight, coordinateX, coordinateY);
 
         this.maxHeighth = maxHeighth;
     }

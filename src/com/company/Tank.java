@@ -7,8 +7,8 @@ public class Tank extends WarMashine {
 
     private int barrelRadius;
 
-    public Tank(String color, int speed, int weight, int barrelRadius) {
-        super(color, speed, weight);
+    public Tank(String color, int speed, int weight, int coordinateX, int coordinateY, int barrelRadius) {
+        super(color, speed, weight, coordinateX, coordinateY);
         this.barrelRadius = barrelRadius;
     }
 

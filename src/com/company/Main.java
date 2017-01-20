@@ -1,20 +1,14 @@
 package com.company;
 
-import java.time.ZoneOffset;
-import java.time.ZonedDateTime;
-import java.util.TimeZone;
-
 public class Main {
 
     public static void main(String[] args) {
-        ZonedDateTime nowU = ZonedDateTime.now(ZoneOffset.UTC);
-        ZonedDateTime nowL = ZonedDateTime.now(ZoneOffset.systemDefault());
 
-        TimeZone localTimezone = TimeZone.getDefault();
-        System.out.println("Diff.Local-UTC(" + localTimezone.getID() + "): " + localTimezone.getRawOffset()
-                + "\n" + "now UTC : " + nowU + "\n" + "now Local : " + nowL);
+        WarMashine tank = new Tank("green", 36000, 50000, 15, 20, 300);
+        WarMashine plane = new Plane("white", 1000000, 30000, 30, 45, 13000);
+        System.out.println(tank.getColor() + " | " +  plane.getColor());
 
-        int hours = localTimezone.getRawOffset() / 1000 / 60 / 60;
-        System.out.println(hours);
+        System.out.println( "x = " + tank.getCoordinates()[0] + "\n" + "y = " + tank.getCoordinates()[1]
+                + "\n" + "time = " + tank.getCoordinates()[2]);
     }
 }
